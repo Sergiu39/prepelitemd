@@ -34,5 +34,14 @@
   "settingsLanguage": "Langue",
   "languageSystem": "Langue du téléphone",
   "demoDataBanner": "Données d'exemple : rien n'est encore enregistré.",
-  "daysValue": "{days} jours"
+  "daysValue": "{days} jours",
+  "welcomeSubtitle": "Votre ferme dans votre poche",
+  "chooseLanguage": "Choisissez votre langue",
+  "chooseGroup": "Qu'élevez-vous ?",
+  "groupBirds": "Oiseaux",
+  "groupAnimals": "Animaux",
+  "groupBirdsHint": "Cailles, poules",
+  "groupAnimalsHint": "Lapins",
+  "chooseSpecies": "Que voulez-vous gérer ?",
+  "settingsStartPage": "Page d'accueil"
 }

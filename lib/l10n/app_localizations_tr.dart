@@ -121,4 +121,31 @@ class AppLocalizationsTr extends AppLocalizations {
   String daysValue(int days) {
     return '$days gün';
   }
+
+  @override
+  String get welcomeSubtitle => 'Çiftliğiniz cebinizde';
+
+  @override
+  String get chooseLanguage => 'Dilinizi seçin';
+
+  @override
+  String get chooseGroup => 'Ne yetiştiriyorsunuz?';
+
+  @override
+  String get groupBirds => 'Kanatlılar';
+
+  @override
+  String get groupAnimals => 'Hayvanlar';
+
+  @override
+  String get groupBirdsHint => 'Bıldırcın, tavuk';
+
+  @override
+  String get groupAnimalsHint => 'Tavşan';
+
+  @override
+  String get chooseSpecies => 'Neyi yönetmek istiyorsunuz?';
+
+  @override
+  String get settingsStartPage => 'Başlangıç sayfası';
 }

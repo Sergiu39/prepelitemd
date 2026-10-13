@@ -34,5 +34,14 @@
   "settingsLanguage": "Мова",
   "languageSystem": "Мова телефону",
   "demoDataBanner": "Демо-дані: поки нічого не зберігається.",
-  "daysValue": "{days} дн."
+  "daysValue": "{days} дн.",
+  "welcomeSubtitle": "Ваша ферма в кишені",
+  "chooseLanguage": "Оберіть мову",
+  "chooseGroup": "Кого ви розводите?",
+  "groupBirds": "Птахи",
+  "groupAnimals": "Тварини",
+  "groupBirdsHint": "Перепілки, кури",
+  "groupAnimalsHint": "Кролі",
+  "chooseSpecies": "Чим ви хочете керувати?",
+  "settingsStartPage": "Стартова сторінка"
 }

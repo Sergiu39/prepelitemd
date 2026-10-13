@@ -34,5 +34,14 @@
   "settingsLanguage": "Dil",
   "languageSystem": "Telefon dili",
   "demoDataBanner": "Örnek veriler: henüz hiçbir şey kaydedilmiyor.",
-  "daysValue": "{days} gün"
+  "daysValue": "{days} gün",
+  "welcomeSubtitle": "Çiftliğiniz cebinizde",
+  "chooseLanguage": "Dilinizi seçin",
+  "chooseGroup": "Ne yetiştiriyorsunuz?",
+  "groupBirds": "Kanatlılar",
+  "groupAnimals": "Hayvanlar",
+  "groupBirdsHint": "Bıldırcın, tavuk",
+  "groupAnimalsHint": "Tavşan",
+  "chooseSpecies": "Neyi yönetmek istiyorsunuz?",
+  "settingsStartPage": "Başlangıç sayfası"
 }

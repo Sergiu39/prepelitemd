@@ -121,4 +121,31 @@ class AppLocalizationsRu extends AppLocalizations {
   String daysValue(int days) {
     return '$days дн.';
   }
+
+  @override
+  String get welcomeSubtitle => 'Ваша ферма в кармане';
+
+  @override
+  String get chooseLanguage => 'Выберите язык';
+
+  @override
+  String get chooseGroup => 'Кого вы разводите?';
+
+  @override
+  String get groupBirds => 'Птицы';
+
+  @override
+  String get groupAnimals => 'Животные';
+
+  @override
+  String get groupBirdsHint => 'Перепела, куры';
+
+  @override
+  String get groupAnimalsHint => 'Кролики';
+
+  @override
+  String get chooseSpecies => 'Чем вы хотите управлять?';
+
+  @override
+  String get settingsStartPage => 'Стартовая страница';
 }

@@ -317,6 +317,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{days} days'**
   String daysValue(int days);
+
+  /// No description provided for @welcomeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your farm, in your pocket'**
+  String get welcomeSubtitle;
+
+  /// No description provided for @chooseLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your language'**
+  String get chooseLanguage;
+
+  /// No description provided for @chooseGroup.
+  ///
+  /// In en, this message translates to:
+  /// **'What do you raise?'**
+  String get chooseGroup;
+
+  /// No description provided for @groupBirds.
+  ///
+  /// In en, this message translates to:
+  /// **'Birds'**
+  String get groupBirds;
+
+  /// No description provided for @groupAnimals.
+  ///
+  /// In en, this message translates to:
+  /// **'Animals'**
+  String get groupAnimals;
+
+  /// No description provided for @groupBirdsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Quail, chickens'**
+  String get groupBirdsHint;
+
+  /// No description provided for @groupAnimalsHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Rabbits'**
+  String get groupAnimalsHint;
+
+  /// No description provided for @chooseSpecies.
+  ///
+  /// In en, this message translates to:
+  /// **'What do you want to manage?'**
+  String get chooseSpecies;
+
+  /// No description provided for @settingsStartPage.
+  ///
+  /// In en, this message translates to:
+  /// **'Start page'**
+  String get settingsStartPage;
 }
 
 class _AppLocalizationsDelegate

@@ -1,8 +1,16 @@
 import 'package:flutter/widgets.dart';
 
-/// Holds the language chosen in Settings. `null` means "follow the phone".
-class LocaleController extends ValueNotifier<Locale?> {
-  LocaleController() : super(null);
+import 'app_prefs.dart';
 
-  void setLocale(Locale? locale) => value = locale;
+/// Holds the chosen language. `null` means "follow the phone".
+class LocaleController extends ValueNotifier<Locale?> {
+  LocaleController({this.prefs})
+    : super(prefs?.languageCode == null ? null : Locale(prefs!.languageCode!));
+
+  final AppPrefs? prefs;
+
+  void setLocale(Locale? locale) {
+    value = locale;
+    prefs?.setLanguageCode(locale?.languageCode);
+  }
 }

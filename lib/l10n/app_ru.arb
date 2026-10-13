@@ -34,5 +34,14 @@
   "settingsLanguage": "Язык",
   "languageSystem": "Язык телефона",
   "demoDataBanner": "Демо-данные: пока ничего не сохраняется.",
-  "daysValue": "{days} дн."
+  "daysValue": "{days} дн.",
+  "welcomeSubtitle": "Ваша ферма в кармане",
+  "chooseLanguage": "Выберите язык",
+  "chooseGroup": "Кого вы разводите?",
+  "groupBirds": "Птицы",
+  "groupAnimals": "Животные",
+  "groupBirdsHint": "Перепела, куры",
+  "groupAnimalsHint": "Кролики",
+  "chooseSpecies": "Чем вы хотите управлять?",
+  "settingsStartPage": "Стартовая страница"
 }

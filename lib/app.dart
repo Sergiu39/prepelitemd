@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
 
+import 'core/app_prefs.dart';
 import 'core/locale_controller.dart';
 import 'data/farm_repository.dart';
 import 'features/dashboard/dashboard_screen.dart';
@@ -9,6 +10,7 @@ import 'features/settings/settings_screen.dart';
 import 'features/shell/home_shell.dart';
 import 'features/species/flock_detail_screen.dart';
 import 'features/species/species_screen.dart';
+import 'features/welcome/welcome_screen.dart';
 import 'l10n/app_localizations.dart';
 import 'models/species.dart';
 
@@ -17,10 +19,14 @@ class PrepeliteApp extends StatefulWidget {
     super.key,
     required this.repository,
     required this.localeController,
+    this.prefs,
   });
 
   final FarmRepository repository;
   final LocaleController localeController;
+
+  /// Remembers language and last section; `null` in tests that don't need it.
+  final AppPrefs? prefs;
 
   @override
   State<PrepeliteApp> createState() => _PrepeliteAppState();
@@ -28,10 +34,35 @@ class PrepeliteApp extends StatefulWidget {
 
 class _PrepeliteAppState extends State<PrepeliteApp> {
   late final GoRouter _router = GoRouter(
-    initialLocation: '/',
+    // Returning users go straight to where they left off.
+    initialLocation: widget.prefs?.lastSection ?? '/welcome',
     routes: [
+      GoRoute(
+        path: '/welcome',
+        builder: (context, state) =>
+            WelcomeScreen(localeController: widget.localeController),
+        routes: [
+          GoRoute(
+            path: ':group',
+            redirect: (context, state) =>
+                SpeciesGroup.values.any(
+                  (g) => g.name == state.pathParameters['group'],
+                )
+                ? null
+                : '/welcome',
+            builder: (context, state) => GroupScreen(
+              group: SpeciesGroup.values.byName(state.pathParameters['group']!),
+              onChosen: (context, species) {
+                widget.prefs?.setLastSection('/${species.name}');
+                context.go('/${species.name}');
+              },
+            ),
+          ),
+        ],
+      ),
       StatefulShellRoute.indexedStack(
-        builder: (context, state, shell) => HomeShell(shell: shell),
+        builder: (context, state, shell) =>
+            HomeShell(shell: shell, prefs: widget.prefs),
         branches: [
           _branch('/', DashboardScreen(repository: widget.repository)),
           for (final species in Species.values)

@@ -122,4 +122,31 @@ class AppLocalizationsFr extends AppLocalizations {
   String daysValue(int days) {
     return '$days jours';
   }
+
+  @override
+  String get welcomeSubtitle => 'Votre ferme dans votre poche';
+
+  @override
+  String get chooseLanguage => 'Choisissez votre langue';
+
+  @override
+  String get chooseGroup => 'Qu\'élevez-vous ?';
+
+  @override
+  String get groupBirds => 'Oiseaux';
+
+  @override
+  String get groupAnimals => 'Animaux';
+
+  @override
+  String get groupBirdsHint => 'Cailles, poules';
+
+  @override
+  String get groupAnimalsHint => 'Lapins';
+
+  @override
+  String get chooseSpecies => 'Que voulez-vous gérer ?';
+
+  @override
+  String get settingsStartPage => 'Page d\'accueil';
 }

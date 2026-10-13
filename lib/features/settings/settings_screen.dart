@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../core/l10n_ext.dart';
 import '../../core/locale_controller.dart';
@@ -23,6 +24,13 @@ class SettingsScreen extends StatelessWidget {
           ),
           child: ListView(
             children: [
+              ListTile(
+                leading: const Icon(Icons.home_outlined),
+                title: Text(l10n.settingsStartPage),
+                trailing: const Icon(Icons.chevron_right),
+                onTap: () => context.go('/welcome'),
+              ),
+              const Divider(),
               ListTile(
                 title: Text(
                   l10n.settingsLanguage,

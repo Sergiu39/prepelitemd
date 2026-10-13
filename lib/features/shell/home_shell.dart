@@ -1,18 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/app_prefs.dart';
 import '../../core/l10n_ext.dart';
 import '../../models/species.dart';
 
 /// Bottom navigation (phone) or side rail (wide screens / web) around the
 /// five main sections: dashboard, the three species modules, settings.
 class HomeShell extends StatelessWidget {
-  const HomeShell({super.key, required this.shell});
+  const HomeShell({super.key, required this.shell, this.prefs});
 
   final StatefulNavigationShell shell;
+  final AppPrefs? prefs;
 
-  void _go(int index) =>
-      shell.goBranch(index, initialLocation: index == shell.currentIndex);
+  /// Branch order matches the routes in app.dart.
+  static final _sectionPaths = [
+    '/',
+    for (final s in Species.values) '/${s.name}',
+    '/settings',
+  ];
+
+  void _go(int index) {
+    shell.goBranch(index, initialLocation: index == shell.currentIndex);
+    if (_sectionPaths[index] != '/settings') {
+      prefs?.setLastSection(_sectionPaths[index]);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

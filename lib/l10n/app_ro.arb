@@ -34,5 +34,14 @@
   "settingsLanguage": "Limba",
   "languageSystem": "Limba telefonului",
   "demoDataBanner": "Date de probă: nimic nu se salvează încă.",
-  "daysValue": "{days} zile"
+  "daysValue": "{days} zile",
+  "welcomeSubtitle": "Ferma ta, în buzunar",
+  "chooseLanguage": "Alege limba",
+  "chooseGroup": "Ce crești?",
+  "groupBirds": "Păsări",
+  "groupAnimals": "Animale",
+  "groupBirdsHint": "Prepelițe, găini",
+  "groupAnimalsHint": "Iepuri",
+  "chooseSpecies": "Ce vrei să administrezi?",
+  "settingsStartPage": "Pagina de start"
 }

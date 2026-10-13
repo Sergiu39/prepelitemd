@@ -34,5 +34,14 @@
   "settingsLanguage": "Idioma",
   "languageSystem": "Idioma del teléfono",
   "demoDataBanner": "Datos de ejemplo: aún no se guarda nada.",
-  "daysValue": "{days} días"
+  "daysValue": "{days} días",
+  "welcomeSubtitle": "Tu granja, en tu bolsillo",
+  "chooseLanguage": "Elige tu idioma",
+  "chooseGroup": "¿Qué crías?",
+  "groupBirds": "Aves",
+  "groupAnimals": "Animales",
+  "groupBirdsHint": "Codornices, gallinas",
+  "groupAnimalsHint": "Conejos",
+  "chooseSpecies": "¿Qué quieres gestionar?",
+  "settingsStartPage": "Página de inicio"
 }

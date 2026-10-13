@@ -121,4 +121,31 @@ class AppLocalizationsRo extends AppLocalizations {
   String daysValue(int days) {
     return '$days zile';
   }
+
+  @override
+  String get welcomeSubtitle => 'Ferma ta, în buzunar';
+
+  @override
+  String get chooseLanguage => 'Alege limba';
+
+  @override
+  String get chooseGroup => 'Ce crești?';
+
+  @override
+  String get groupBirds => 'Păsări';
+
+  @override
+  String get groupAnimals => 'Animale';
+
+  @override
+  String get groupBirdsHint => 'Prepelițe, găini';
+
+  @override
+  String get groupAnimalsHint => 'Iepuri';
+
+  @override
+  String get chooseSpecies => 'Ce vrei să administrezi?';
+
+  @override
+  String get settingsStartPage => 'Pagina de start';
 }

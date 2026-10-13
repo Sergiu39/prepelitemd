@@ -32,6 +32,19 @@ Pornim cu trei specii. Fiecare este un **modul** separat, ca să putem adăuga u
 2. **Pui de găină** — ouătoare și broiler
 3. **Iepuri** — reproducție și carne
 
+### 3.1 Pagina de start
+
+Prima pagină pe care o vede un utilizator nou (pe web, telefon și tabletă):
+1. Numele aplicației și cele **7 limbi**, fiecare cu **steagul** și numele limbii scris în limba ei
+   (ex.: 🇲🇩 Română, 🇺🇦 Українська). Româna folosește steagul Moldovei.
+2. Dedesubt, **două butoane mari**: **Păsări** și **Animale**.
+3. La **Păsări** se deschide pagina cu Prepelițe și Găini; la **Animale**, pagina cu Iepuri.
+   Alegi ce vrei să administrezi și intri direct în modulul respectiv.
+
+Aplicația ține minte limba și ultimul modul folosit, așa că la următoarea deschidere intri direct acolo.
+Pagina de start se poate redeschide oricând din **Setări → Pagina de start**. Când apar specii noi
+(rațe, capre etc.), ele intră automat în grupul lor.
+
 ## 4. Funcții comune tuturor modulelor
 
 ### 4.1 Loturi / cuști
@@ -102,7 +115,7 @@ Plata: prin magazinele Google Play și App Store pe telefon, prin Stripe pe web.
 ## 8. Pașii următori
 
 1. ✅ Specificația (acest document) — de corectat de Sergiu
-2. ✅ Scheletul aplicației: structură, cele 7 limbi, meniu pentru cele trei module, date de probă
+2. ✅ Scheletul aplicației: pagina de start, cele 7 limbi, meniu pentru cele trei module, date de probă
 3. Ecrane reale pentru loturi, mortalitate și ouă (prepelițe primele)
 4. Conectare la Supabase: conturi, ferme, salvare date
 5. Hrană, sănătate cu reamintiri, bani

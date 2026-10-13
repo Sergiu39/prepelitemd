@@ -62,5 +62,14 @@
         "type": "int"
       }
     }
-  }
+  },
+  "welcomeSubtitle": "Your farm, in your pocket",
+  "chooseLanguage": "Choose your language",
+  "chooseGroup": "What do you raise?",
+  "groupBirds": "Birds",
+  "groupAnimals": "Animals",
+  "groupBirdsHint": "Quail, chickens",
+  "groupAnimalsHint": "Rabbits",
+  "chooseSpecies": "What do you want to manage?",
+  "settingsStartPage": "Start page"
 }
