@@ -1,0 +1,15 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+.vscode/
+.DS_Store
+# Secrets (Supabase keys etc.) never go in the repo
+.env
+*.env

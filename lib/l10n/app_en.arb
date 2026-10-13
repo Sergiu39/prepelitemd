@@ -1,0 +1,75 @@
+{
+  "@@locale": "en",
+  "appTitle": "prepeliteMD",
+  "navDashboard": "Dashboard",
+  "navSettings": "Settings",
+  "speciesQuail": "Quail",
+  "speciesChicken": "Chickens",
+  "speciesRabbit": "Rabbits",
+  "purposeEggs": "Eggs",
+  "purposeMeat": "Meat",
+  "purposeBreeding": "Breeding",
+  "dashboardEggsToday": "Eggs today",
+  "dashboardEggsWeek": "Eggs, last 7 days",
+  "dashboardAliveAnimals": "Live animals",
+  "activeFlocks": "Active flocks: {count}",
+  "@activeFlocks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "flocksEmpty": "No flocks yet",
+  "addFlock": "Add flock",
+  "ageDays": "Age: {days} d",
+  "@ageDays": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "eggsTodayCount": "Eggs today: {count}",
+  "@eggsTodayCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "flockNotFound": "Flock not found",
+  "fieldSpecies": "Species",
+  "fieldPurpose": "Purpose",
+  "fieldStartDate": "Start date",
+  "fieldAge": "Age",
+  "fieldInitialCount": "Initial count",
+  "fieldDeaths": "Deaths",
+  "fieldSold": "Sold",
+  "fieldCurrentCount": "Current count",
+  "sectionFeed": "Feed",
+  "sectionHealth": "Health",
+  "sectionProduction": "Production",
+  "sectionMoney": "Money",
+  "comingSoon": "Coming soon",
+  "settingsLanguage": "Language",
+  "languageSystem": "Phone language",
+  "demoDataBanner": "Sample data: nothing is saved yet.",
+  "daysValue": "{days} days",
+  "@daysValue": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "welcomeSubtitle": "Your farm, in your pocket",
+  "chooseLanguage": "Choose your language",
+  "chooseGroup": "What do you raise?",
+  "groupBirds": "Birds",
+  "groupAnimals": "Animals",
+  "groupBirdsHint": "Quail, chickens",
+  "groupAnimalsHint": "Rabbits",
+  "chooseSpecies": "What do you want to manage?",
+  "settingsStartPage": "Start page"
+}
